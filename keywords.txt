@@ -1,0 +1,16 @@
+#######################################
+# Syntax Coloring Map PreciseLM35
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PreciseLM35	KEYWORD1    
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+readCelsius	KEYWORD2
+readFahrenheit	KEYWORD2
+readPreciseAref	KEYWORD2
