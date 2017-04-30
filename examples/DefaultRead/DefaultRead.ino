@@ -14,30 +14,22 @@
  *
  * See file LICENSE for further informations on licensing terms.
  *
- * CalibratedDefaultRead.ino
- *
- * Use this if you need to measure temperatures higher than 110C or 
- * other analog sensor needs to read values higher than 1.1V. 
- * Otherwise CalibratedInternalRead gives you more accurate results
+ * DefaultRead.ino
  *
  * Uses MCU's reported Vcc voltage instead of a nominal value of 3.3V or 5V
  * which can change over time due to depleting battery, unstable power
  * supply, etc.
  *
- * Calibration:
- * - First run with measuredVsReadAreFratio = 1.0
- * - Use a multimeter and measure voltage on AREF pin. It should be around 3.3V or 5V 
- *   depending on your Arduino
- * - Divide this value by the displayed AREF value and use it as measuredVsReadAreFratio
- * - Run the sketch again and check if serial terminal shows correct value for AREF
+ * Use this if you need to measure temperatures higher than 110C or 
+ * other analog sensor needs to read values higher than 1.1V. 
+ * Otherwise CalibratedInternalRead gives you more accurate results
  * 
  */
 
 #include <PreciseLM35.h>
 
 const int pinLM35 = A0;
-const float measuredVsReadArefRatio = 1.0; // enter here your ratio between measured and expected AREF
-PreciseLM35 lm35(pinLM35, DEFAULT, measuredVsReadArefRatio);
+PreciseLM35 lm35(pinLM35, DEFAULT);
 
 void setup() {
   Serial.begin(9600);
