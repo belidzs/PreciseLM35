@@ -1,6 +1,6 @@
 /*
  * PreciseLM35: A simple LM35 wrapper with optional voltage calibration facility
- * Version 1.0.0 (2017-04-30)
+ * Version 1.0.1 (2017-04-30)
  * Written by belidzs
  * 
  * Features selectable reference voltage. 

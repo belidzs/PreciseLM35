@@ -1,6 +1,6 @@
 /*
  * PreciseLM35: A simple LM35 wrapper with optional voltage calibration facility
- * Version 1.0.0 (2017-04-30)
+ * Version 1.0.1 (2017-04-30)
  * Written by belidzs
  * 
  * Features selectable reference voltage. 
@@ -24,9 +24,9 @@
  * 1100 / 10 = 110.0C (230F)
  *
  * Calibration:
- * - First run with measuredVsReadVccRatio = 1.0
+ * - First run with measuredVsReadAreFratio = 1.0
  * - Use a multimeter and measure voltage on AREF pin. It should be around 1.1V 
- * - Divide this value by 1.1 and use it as measuredVsReadVccRatio
+ * - Divide this value by 1.1 and use it as measuredVsReadAreFratio
  * - Check if serial terminal shows correct value for AREF
  * 
  */

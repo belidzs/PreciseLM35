@@ -1,6 +1,6 @@
 /*
  * PreciseLM35: A simple LM35 wrapper with optional voltage calibration facility
- * Version 1.0.0 (2017-04-30)
+ * Version 1.0.1 (2017-04-30)
  * Written by belidzs
  * 
  * Features selectable reference voltage. 
@@ -21,10 +21,10 @@
  * Otherwise CalibratedInternalRead gives you more accurate results
  *
  * Calibration:
- * - First run with measuredVsReadVccRatio = 1.0
+ * - First run with measuredVsReadAreFratio = 1.0
  * - Use a multimeter and measure voltage on AREF pin. It should be around 3.3V or 5V 
  *   depending on your Arduino
- * - Divide this value by the displayed AREF value and use it as measuredVsReadVccRatio
+ * - Divide this value by the displayed AREF value and use it as measuredVsReadAreFratio
  * - Run the sketch again and check if serial terminal shows correct value for AREF
  * 
  */
