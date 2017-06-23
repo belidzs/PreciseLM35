@@ -64,7 +64,7 @@ WARNING: Using internal AREF, your maximum measured temperature is limited to  `
 ### Calibration:
  - First run with measuredVsReadAreFratio = 1.0
  - Use a multimeter and measure voltage on AREF pin. It should be around 1.1V 
- - Divide this value by 1.1 and use it as measuredVsReadAreFratio
+ - Divide this value by 1.1 and use it as measuredVsReadArefRatio
  - Check if serial terminal shows correct value for AREF
 
 ```ino
